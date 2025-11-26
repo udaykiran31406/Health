@@ -1,0 +1,315 @@
+/* ===== Global Body Styles ===== */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #76b852, #8DC26F);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Optional wrapper for React root */
+.app {
+  width: 100%;
+}
+
+/* ===== Login / Signup Container ===== */
+.login-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+h2 {
+  color: #4CAF50;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Error & Success Messages */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.success {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Links */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Dashboard Layout (Admin + Student Wrapper) ===== */
+.dashboard-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 30px;
+}
+
+/* Header shared for dashboards */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #4CAF50;
+  margin: 0;
+}
+
+header button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: auto;
+}
+
+header button:hover {
+  background-color: #45a049;
+}
+
+/* Admin cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+/* ===== Student Dashboard: Progress Section ===== */
+#progress {
+  background-color: #e8f7ed;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+#progress h2 {
+  color: #2b8a3e;
+  margin-bottom: 10px;
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.progress-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress-item label {
+  flex: 1;
+  font-weight: 600;
+}
+
+progress {
+  flex: 2;
+  height: 20px;
+  margin: 0 10px;
+}
+
+.progress-item span {
+  width: 50px;
+  text-align: right;
+}
+
+#updateProgress {
+  background-color: #2b8a3e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: auto;
+}
+
+#updateProgress:hover {
+  background-color: #237732;
+}
+
+/* Extra button style if needed */
+#viewProgress {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+  width: auto;
+}
+
+#viewProgress:hover {
+  background-color: #0056b3;
+}
+
+/* Layout for student main content */
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Left section (form area) */
+.left-panel {
+  flex: 1;
+  min-width: 60%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Right section (progress box) */
+.right-panel {
+  flex: 0.35;
+  min-width: 250px;
+  background-color: #dfffd8;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Override input width inside student sections */
+section input {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Profile display box */
+.profile-display {
+  background-color: #f1f8e9;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+/* === Wellness Programs === */
+.program-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  justify-content: space-around;
+}
+
+.program-card {
+  background-color: #e3f2fd;
+  border-radius: 12px;
+  padding: 15px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.program-card h3 {
+  margin-bottom: 10px;
+}
+
+.join-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: auto;
+}
+
+.join-btn:hover {
+  background-color: #43a047;
+}
+
+/* Joined programs list */
+.joined-programs {
+  margin-top: 25px;
+  background-color: #f9fbe7;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.joined-programs ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+/* Section spacing on student dashboard */
+main {
+  margin-top: 10px;
+}
+
+section {
+  margin-bottom: 25px;
+}
